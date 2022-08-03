@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" onmousemove="printY(event)">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -32,7 +32,7 @@
 
 		<!-- --------------------------------------------------------------------------------------------------- -->
 		<!-- Please feel free to change the title to whatever your project is -->
-		<title>User Input and Calculations</title>
+		<title>Interactive Web apps</title>
 		<!-- --------------------------------------------------------------------------------------------------- -->
 	</head>
 
@@ -41,7 +41,7 @@
 			<nav>
 				<div class="custom-nav-container">
 					<div class="header">
-						<a href="" class="logo">User Input and Calculations</a>
+						<a href="" class="logo">Interactive Web Apps Codespace</a>
 					</div>
 					<div class="menu">
 						<a href="#login"
@@ -78,20 +78,95 @@
 			<!-- ------------------This is where you start working-------------------------- -->
 			<!-- --------------------------------------------------------------------------------------------------- -->
 
-			<div id="app" style="margin: 40px">
-				<a href="./Static/functions/swap.html">
+			<h1>JS Basics and Debugging Challenge.1</h1>
+			<div id="app" style="margin: 20px">
+				<a style="margin: 10px" href="./Static/functions/swap.html">
 					<button>Swapping values of Variables:</button>
 				</a>
 
-				<a href="./Static/functions/conversion.html">
+				<a style="margin: 10px" href="./Static/functions/conversion.html">
 					<button>Convert Km to Miles:</button>
 				</a>
 
-				<a href="./Static/functions/vat.html">
+				<a style="margin: 10px" href="./Static/functions/vat.html">
 					<button>VAT Calculator:</button>
 				</a>
 			</div>
-
+			<hr />
+			<div class="container">
+				<h2 id="change">Text that will change if you Create an alert</h2>
+				<div class="input-group mb-1">
+					<div class="input-group-prepend">
+						<button
+							onClick="userInput()"
+							id="myButton"
+							class="btn btn-outline-primary"
+							type="button"
+						>
+							Create an Alert
+						</button>
+					</div>
+					<input
+						id="myInput"
+						type="text"
+						class="form-control"
+						placeholder="Type whatever in here and click the 'Create an Alert' button to create an alert and change the text"
+						aria-label=""
+						aria-describedby="basic-addon1"
+					/>
+				</div>
+			</div>
+			<hr />
+			<div>
+				<h1>Building an interactive Rainbow Challenge.2</h1>
+				<div class="rainbowDiv">
+					<div id="rainbowWrapper">
+						<div id="red">
+							<button onclick="redDivColorChange()" class="btn">Red</button>
+						</div>
+						<div id="orange">
+							<button onclick="orangeDivColorChange()" class="btn">
+								orange
+							</button>
+						</div>
+						<div id="yellow">
+							<button onclick="yellowDivColorChange()" class="btn">
+								yellow
+							</button>
+						</div>
+						<div id="green">
+							<button onclick="greenDivColorChange()" class="btn">green</button>
+						</div>
+						<div id="blue">
+							<button onclick="blueDivColorChange()" class="btn">blue</button>
+						</div>
+						<div id="purple">
+							<button onclick="purpleDivColorChange()" class="btn">
+								purple
+							</button>
+						</div>
+						<div id="violet">
+							<button onclick="violetDivColorChange()" class="btn">
+								violet
+							</button>
+						</div>
+					</div>
+					<div>
+						<button onclick="resetBtn()" class="btn btn-primary resetButton">
+							Reset
+						</button>
+					</div>
+				</div>
+			</div>
+			<hr />
+			<div>
+				<hgroup>
+					<h1>Conditionals in Javascript</h1>
+					<h2 id="subHead">Where's my mouse?</h2>
+				</hgroup>
+				<p id="reading"></p>
+			</div>
+			<hr />
 			<!-- --------------------------------------------------------------------------------------------------- -->
 			<!-- --------------------------------------------------------------------------------------------------- -->
 		</div>
@@ -109,28 +184,28 @@
 						<span class="underline">duaneo2011@gmail.com</span>
 					</h4>
 				</div>
-				<ul class="socials">
-					<li>
+				<div class="socials">
+					<div>
 						<a href="https://www.instagram.com/coffe_is_great2021/"
 							><i class="fa fa-instagram"></i
 						></a>
-					</li>
-					<li>
+					</div>
+					<div>
 						<a href="https://github.com/DuaneScheepersWebDeveloper"
 							><i class="fa fa-github"></i
 						></a>
-					</li>
-					<li>
+					</div>
+					<div>
 						<a href="https://www.linkedin.com/in/duane-scheepers-b2bb53240/"
 							><i class="fa fa-linkedin-square"></i
 						></a>
-					</li>
-				</ul>
+					</div>
+				</div>
 
 				<div class="footer-bottom">
-					<!-- <button class="button" onclick="alert">
+					<button class="button" onclick="getMilk()">
 						<span> Testing Javascript </span>
-					</button> -->
+					</button>
 					<div class="footer-menu">
 						<a href="" class="footerArrow"
 							><i class="fa-solid fa-circle-arrow-up"></i
@@ -146,10 +221,12 @@
 	src="static/javascript/javascript-basics-and-debugging.js"
 	charset="utf-8"
 ></script>
+<script src="static/javascript/interActiveRainbow.js" charset="utf-8"></script>
 <script
 	src="static/javascript/javascript-arithmetic-challenge.js"
 	charset="utf-8"
 ></script>
+<script src="static/javascript/index.js" charset="utf-8"></script>
 <script
 	src="https://kit.fontawesome.com/80b954ffb3.js"
 	crossorigin="anonymous"

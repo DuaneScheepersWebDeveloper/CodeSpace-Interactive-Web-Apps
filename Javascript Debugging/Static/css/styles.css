@@ -1,7 +1,24 @@
 .content {
 	font-family: Arial, Helvetica, sans-serif;
 }
-
+.content h1 {
+	padding: 2rem;
+	text-align: center;
+	color: dodgerblue;
+	font-size: 1.8rem;
+}
+.content h2 {
+	padding: 1.3rem;
+	text-align: center;
+	color: dodgerblue;
+	font-size: 1.4rem;
+}
+.changedHeading {
+	padding: 1.3rem;
+	text-align: center;
+	color: red;
+	font-size: 1.4rem;
+}
 #title {
 	background-color: rgb(240, 240, 240);
 	line-height: 5rem;
@@ -27,7 +44,7 @@
 }
 .vatSection {
 	align-items: center;
-	height: 100vh;
+	height: 420px;
 	display: flex;
 	flex-direction: column;
 }
@@ -35,6 +52,10 @@
 	margin: 35px;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+}
+.backButton {
+	margin: 40px;
+	float: right;
 }
 .vat-calc {
 	background: dodgerblue;
@@ -114,4 +135,44 @@ form div {
 	.vat-calc {
 		margin: 45px auto;
 	}
+}
+.rainbowDiv {
+	display: grid;
+	padding: 20px;
+	justify-content: center;
+}
+#rainbowWrapper {
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	justify-content: center;
+	padding: 15px;
+	background-image: linear-gradient(
+		90deg,
+		rgba(255, 0, 0, 1) 0%,
+		rgba(255, 154, 0, 1) 10%,
+		rgba(208, 222, 33, 1) 20%,
+		rgba(79, 220, 74, 1) 30%,
+		rgba(63, 218, 216, 1) 40%,
+		rgba(47, 201, 226, 1) 50%,
+		rgba(28, 127, 238, 1) 60%,
+		rgba(95, 21, 242, 1) 70%,
+		rgba(186, 12, 248, 1) 80%,
+		rgba(251, 7, 217, 1) 90%,
+		rgba(255, 0, 0, 1) 100%
+	);
+	border-radius: 5px;
+}
+
+#rainbowWrapper div {
+	width: 350px;
+}
+#rainbowWrapper div button {
+	width: 350px;
+	color: #fff;
+	font-size: 30px;
+	font-weight: 600;
+}
+.resetButton {
+	margin: 40px;
+	float: right;
 }
