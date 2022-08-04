@@ -176,3 +176,40 @@ form div {
 	margin: 40px;
 	float: right;
 }
+
+.imgDiv img {
+	height: auto;
+	width: 150px;
+}
+.imgDiv {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	justify-content: center;
+}
+.imgDivWrapper div {
+}
+.image {
+	display: none;
+	justify-content: center;
+	background: radial-gradient(
+		circle at 30% 107%,
+		#fdf497 0%,
+		#fdf497 5%,
+		#fd5949 45%,
+		#d6249f 60%,
+		#285aeb 90%
+	);
+	border-radius: 20px;
+	padding: 5px;
+	margin: auto;
+}
+.buttonWrapper {
+	margin: 10px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	justify-content: center;
+}
+.imgDivWrapperButton {
+	display: grid;
+	justify-content: center;
+}
