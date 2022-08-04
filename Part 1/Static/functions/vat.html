@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Conversion Calculator</title>
+		<link rel="stylesheet" href="../css/styles.css" />
+		<!-- CSS only -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+			crossorigin="anonymous"
+		/>
+	</head>
+
+	<body>
+		<div class="content vatSection">
+			<div class="vat-calc">
+				<h1>VAT Calculator</h1>
+
+				<div class="main-wrapper">
+					<form>
+						<div>
+							<label for="Net-price">Net Price</label>
+							<input type="text" id="net-price" placeholder="0.00" />
+						</div>
+						<div>
+							<label for="var-rate">VAT Rate(%)</label>
+							<input type="text" id="vat-rate" placeholder="0.00" />
+						</div>
+						<div>
+							<label for="inc-amount">VAT Inclusive Price</label>
+							<input
+								type="text"
+								id="inc-amount"
+								disabled="true"
+								placeholder="0.00"
+							/>
+						</div>
+					</form>
+				</div>
+				<div class="buttonDiv">
+					<button type="button" class="main-btn" id="calc-btn">
+						Calculate
+					</button>
+					<button type="button" class="main-btn" id="reset-btn">Reset</button>
+				</div>
+			</div>
+			<a href="./../../index.html">
+				<button
+					id="myButton"
+					class="btn btn-outline-primary backButton"
+					type="button"
+				>
+					Back
+				</button>
+			</a>
+		</div>
+
+		<!-- Start of Script -->
+		<script src="../javascript/vat.js" charset="utf-8"></script>
+		<!-- End of Script -->
+		<!-- JavaScript Bundle with Popper -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
